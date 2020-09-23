@@ -1,0 +1,18 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:modules/autoexport:
+      /hippo:moduleconfig:
+        autoexport:modules: ['repository-data/application:/',
+                             'repository-data/development:/content',
+                             'repository-data/application:/content/documents/administration',
+                             'repository-data/site-development:myproject:/hst:myproject/hst:configurations/myproject/hst:workspace/hst:sitemenus',
+                             'repository-data/site:myproject:/hst:myproject',
+                             'repository-data/site-development:myproject']
+        autoexport:injectresidualchildnodecategory: ['/hst:platform/**: config', '/hst:*/**/hst:workspace/**[hst:containercomponent]:
+                content', '/hst:*/**/hst:workspace/**[hst:sitemenu]: content', '/hst:*/**/hst:workspace/hst:abstractpages:
+                content', '/hst:*/**/hst:workspace/hst:channel: content', '/hst:*/**/hst:workspace/hst:components:
+                content', '/hst:*/**/hst:workspace/hst:pages: content', '/hst:*/**/hst:workspace/hst:sitemap:
+                content', '/hst:*/**/hst:workspace/hst:templates: content', '/hst:*/hst:hosts/**[hst:virtualhostgroup]:
+                content', '/hst:*/hst:hosts/**[hst:virtualhost]: content', '/hst:*/hst:hosts/**[hst:mount]:
+                content', '/content/documents/administration: config', '/content/documents/common:
+                config']
