@@ -3,8 +3,8 @@ definitions:
     /hippo:configuration/hippo:modules/autoexport:
       /hippo:moduleconfig:
         autoexport:modules: ['repository-data/application:/',
-                             'repository-data/development:/content',
-                             'repository-data/application:/content/documents/administration',
+                             'repository-data/development:/content/documents/myproject',
+                             'repository-data/development:/content/gallery',
                              'repository-data/site-development:myproject:/hst:myproject/hst:configurations/myproject/hst:workspace/hst:sitemenus',
                              'repository-data/site:myproject:/hst:myproject',
                              'repository-data/site-development:myproject']
